@@ -6,10 +6,11 @@ app.controller('WebCalcController', function($scope) {
     $scope.res = 0;
     $scope.nums = [1, 4, 7];
 
-    $scope.numClick = function(dgt) {
+    $scope.btnClick = function(dgt) {
         if ($scope.res == 0)
             $scope.res = dgt;
-        else
+        else {
             $scope.res = $scope.res + "" + dgt;
+        }
     };
 });

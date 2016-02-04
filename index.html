@@ -28,7 +28,7 @@
     <div class="row text-center">
         <div class="col-md-4"></div>
         <div class="col-md-4">
-            <p><input type="text" ng-model="res" ng-change="calc()"></p>
+            <p><input type="text" disabled="disabled" ng-model="res" ng-change="calc()"></p>
         </div>
         <div class="col-md-4"></div>
     </div>
@@ -37,9 +37,9 @@
         <div class="col-md-5"></div>
         <div class="col-md-2 bg-info">
             <p>
-            <button type="button" class="btn btn-primary" ng-click="numClick(n)">{{ n }}</button>
-            <button type="button" class="btn btn-primary" ng-click="numClick(n+1)">{{ n+1 }}</button>
-            <button type="button" class="btn btn-primary" ng-click="numClick(n+2)">{{ n+2 }}</button>
+            <button type="button" class="btn btn-primary" ng-click="btnClick(n)">{{ n }}</button>
+            <button type="button" class="btn btn-primary" ng-click="btnClick(n+1)">{{ n+1 }}</button>
+            <button type="button" class="btn btn-primary" ng-click="btnClick(n+2)">{{ n+2 }}</button>
             </p>
         </div>
         <div class="col-md-5"></div>
@@ -49,9 +49,9 @@
         <div class="col-md-5"></div>
         <div class="col-md-2 bg-info">
             <p>
-                <button type="button" class="btn btn-warning">+</button>
-                <button type="button" class="btn btn-warning">-</button>
-                <button type="button" class="btn btn-warning">*</button>
+                <button type="button" class="btn btn-warning" ng-click="btnClick('+')">+</button>
+                <button type="button" class="btn btn-warning" ng-click="btnClick('-')">-</button>
+                <button type="button" class="btn btn-warning" ng-click="btnClick('*')">*</button>
             </p>
         </div>
         <div class="col-md-5"></div>
